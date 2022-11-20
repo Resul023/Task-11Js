@@ -1,0 +1,35 @@
+@import "../../custom";
+@import "../../media-query";
+@import "../../mixins";
+@import "../../variables";
+.image-container {
+  position: relative;
+  .image-text {
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 25px;
+
+    p {
+      width: fit-content;
+      background-color: $grey-color;
+      box-shadow: $text-shadow;
+      padding: 12px 14px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 42px;
+      font-family: $font-montserrat;
+    }
+    .on-top {
+      position: relative;
+      top: 5px;
+    }
+  }
+  .dark-purple {
+    P {
+      background: $purple-dark !important;
+      color: $grey-color !important;
+      box-shadow: none;
+    }
+  }
+}

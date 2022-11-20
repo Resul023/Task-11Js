@@ -1,0 +1,72 @@
+@import "../../../../custom";
+@import "../../../../media-query";
+@import "../../../../mixins";
+@import "../../../../variables";
+#camera-desc {
+  margin-top: 93px;
+  .desc-head {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: $ln-h2;
+      font-family: $font-montserrat;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      margin-top: 24px;
+      font-family: $font-montserrat;
+      color: $text-color-blackgrey;
+      strong {
+        color: black;
+      }
+    }
+    .search-btn {
+      @include flex($align: center, $justify: space-between);
+      margin-top: 17px;
+      button {
+        border: none;
+        background: $green-gradient-button;
+        color: white;
+        padding: 17px 56px;
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: $font-montserrat;
+      }
+      .input-area {
+        border-radius: 100px;
+        box-shadow: $text-shadow;
+        padding: 5px;
+        position: relative;
+        .search-icon {
+          position: absolute;
+          top: 15px;
+          right: 8.5%;
+        }
+        .close-icon {
+          position: absolute;
+          top: 15px;
+          right: -13.5%;
+        }
+        input {
+          border-radius: 100px;
+          width: 250px;
+          background-color: $featured-background;
+          box-shadow: $input-shadow;
+          border: none;
+          height: 40px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+  .desc-body {
+    margin-top: 80px;
+  }
+}

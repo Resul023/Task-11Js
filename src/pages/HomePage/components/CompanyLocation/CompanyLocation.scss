@@ -1,0 +1,25 @@
+@import "../../../../custom";
+@import "../../../../media-query";
+@import "../../../../mixins";
+@import "../../../../variables";
+#company-location {
+  .map {
+    width: 100%;
+    min-height: 421px;
+  }
+
+  .company-location-head {
+    text-align: center;
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: $ln-h2;
+      text-transform: uppercase;
+      font-family: $font-montserrat;
+    }
+  }
+  .company-location-body {
+    margin-top: 27px;
+    padding-bottom: 100px;
+  }
+}

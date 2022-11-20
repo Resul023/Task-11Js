@@ -1,0 +1,11 @@
+@import "../../../mixins";
+@import "../../../variables";
+@import "../../../media-query";
+@import "../../../custom";
+#footer-bottom {
+  padding: 40px 0px;
+  .row {
+    @include flex($align: flex-start, $justify: space-between);
+    font-family: $font-montserrat;
+  }
+}

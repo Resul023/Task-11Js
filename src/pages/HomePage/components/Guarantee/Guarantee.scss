@@ -1,0 +1,48 @@
+@import "../../../../custom";
+@import "../../../../media-query";
+@import "../../../../mixins";
+@import "../../../../variables";
+#guarantee {
+  margin-top: 100px;
+  padding: 96px 0px;
+  background-color: $featured-background;
+  .guarantee-head {
+    font-family: $font-montserrat;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: $ln-h2;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: $purple-dark;
+      margin-top: 24px;
+    }
+  }
+  .guarantee-body {
+    margin-top: 37px;
+    gap: 20px;
+  }
+  .guarantee-bottom {
+    text-align: center;
+    .guarantee-bottom-btn {
+      margin-top: 40px;
+      padding: 17px 40px;
+      border: none;
+      background: $green-gradient-button;
+      border-radius: 100px;
+      text-align: center;
+      min-width: 300px;
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+  }
+}

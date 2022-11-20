@@ -1,0 +1,44 @@
+@import "../../../../custom";
+@import "../../../../media-query";
+@import "../../../../mixins";
+@import "../../../../variables";
+
+#hero-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin-top: -7px;
+  height: 650px;
+  position: relative;
+  .hero-circle {
+    position: absolute;
+    bottom: 3%;
+    left: 9.6%;
+    width: 60px;
+    height: 60px;
+    background: $green-gradient;
+    border-radius: 50%;
+  }
+  .circle-text {
+    position: absolute;
+    bottom: 8%;
+    left: 11.2%;
+    p {
+      span {
+        background: linear-gradient(270deg, #8ee901 0%, #4f9c2c 99.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      font-family: $font-montserrat;
+      width: fit-content;
+      padding: 0 20px;
+      height: 61px;
+      background-color: $grey-color;
+      box-shadow: $text-shadow;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 61px;
+    }
+  }
+}

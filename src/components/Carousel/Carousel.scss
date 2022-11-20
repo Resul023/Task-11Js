@@ -1,0 +1,41 @@
+@import "../../custom";
+@import "../../media-query";
+@import "../../mixins";
+@import "../../variables";
+#products {
+  margin-top: 56px;
+  .row {
+    position: relative;
+    .arrow {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      box-shadow: $text-shadow;
+      background-color: $grey-color;
+      @include flex($align: center, $justify: center);
+      z-index: 1;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .arrow-left {
+      top: 110px;
+      left: -1.5%;
+    }
+    .arrow-right {
+      top: 110px;
+      right: -1.5%;
+    }
+  }
+  .head-text {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    h2 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: $ln-h2;
+      font-family: $font-montserrat;
+    }
+  }
+}

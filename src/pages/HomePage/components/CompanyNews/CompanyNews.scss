@@ -1,0 +1,36 @@
+@import "../../../../custom";
+@import "../../../../media-query";
+@import "../../../../mixins";
+@import "../../../../variables";
+#company-news {
+  padding: 95px 0px;
+  .company-news-head {
+    text-align: center;
+    text-transform: uppercase;
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: $ln-h2;
+      font-family: $font-montserrat;
+    }
+  }
+  .company-news-body {
+    margin-top: 27px;
+    gap: 30px;
+  }
+  .company-news-footer {
+    margin-top: 40px;
+    text-align: center;
+    button {
+      background: $green-gradient-button;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      border: none;
+      padding: 17px 50px;
+      border-radius: 100px;
+      color: $grey-color;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-query";
+@import "../../custom";
+.box-item {
+  background-color: $grey-color;
+  padding: 30px;
+  position: relative;
+  min-height: 135px;
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: $ln-h2;
+    font-family: $font-montserrat;
+    text-align: start;
+  }
+  img {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+  }
+}
